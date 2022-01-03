@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <h1>BUDGET APP</h1>
+<div class="main-container">
+    <form class="budget-container">
+        <h2>Please Enter Your Budget</h2>
+        <input type="number" id="budget-input" min="0" step="0.01" required>
+        <button type="submit" class="calculate" id="budget-btn">Calculate</button>
+    </form>
+    <form class="expense-container">
+        <h2>Please Enter Your Expense</h2>
+        <input type="text" id="expense-input" required>
+        <h2>Please Enter Expense Amount</h2>
+        <input type="number" id="amount-input" min="0" step="0.01" required>
+        <button type="submit" class="add-expense" id="expense-btn">Add Expense</button>
+    </form>
+    <div class="money-container">
+        <div class="money-budget">
+            <h2>BUDGET</h2>
+            <i class="fas fa-money-bill-alt"></i>
+            <h2 class="amount" id="budget">0</h2>
+            <h3>Expense Title</h3>
+        </div>
+        <div class="money-expenses">
+            <h2>EXPENSES</h2>
+            <i class="far fa-credit-card"></i>
+            <h2 class="amount" id="expenses">0</h2>
+            <h3>Expense Value</h3>
+        </div>
+        <div class="money-balance">
+            <h2>BALANCE</h2>
+            <i class="fas fa-dollar-sign"></i>
+            <h2 class="amount" id="balance">0</h2>
+        </div>
+    </div>
+    <div class="appended-expense">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
